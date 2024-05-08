@@ -29,7 +29,7 @@ class BitString:
         '''
         checks equality of two arrays representing bitstrings, one of which is your original bitstring.
         '''    
-        return (self.config==other.config).all()
+        return self.config==other.config
     
     def __len__(self):
         '''
