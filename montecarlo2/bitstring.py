@@ -77,7 +77,7 @@ class BitString:
         '''
         creates list from bitstring
         '''
-        self.config=list(s)
+        self.config=np.array(s)
         
     def set_int_config(self, dec:int):
         '''
