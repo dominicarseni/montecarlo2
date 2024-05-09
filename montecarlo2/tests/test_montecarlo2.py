@@ -26,29 +26,28 @@ def test_bitstring():
     for i in range(1000):
         my_bs.set_int_config(i) # Converts from integer to binary
         assert(my_bs.int() == i) # Converts back from binary to integer and tests
-'''
-def test_ising_compute_average_values():
-    conf = BitString(6)
+
+#def test_ising_compute_average_values():
+    #conf = BitString(6)
 
     # Compute the average values for Temperature = 1
-    E, M, HC, MS = IsingHamiltonian.compute_average_values(conf, G, 1)
+    #E, M, HC, MS = IsingHamiltonian.compute_average_values(conf, G, 1)
 
 
-    print(" E  = %12.8f" %E)
-    print(" M  = %12.8f" %M)
-    print(" HC = %12.8f" %HC)
-    print(" MS = %12.8f" %MS)
+    #print(" E  = %12.8f" %E)
+    #print(" M  = %12.8f" %M)
+    #print(" HC = %12.8f" %HC)
+    #print(" MS = %12.8f" %MS)
 
-    assert(np.isclose(E,  -11.95991923))
-    assert(np.isclose(M,   -0.00000000))
-    assert(np.isclose(HC,   0.31925472))
-    assert(np.isclose(MS,   0.01202961))
+    #assert(np.isclose(E,  -11.95991923))
+    #assert(np.isclose(M,   -0.00000000))
+    #assert(np.isclose(HC,   0.31925472))
+    #assert(np.isclose(MS,   0.01202961))
 
-def test_get_lowest_energy_config():
-    N=10
+#def test_get_lowest_energy_config():
+    #N=10
     
-    assert(abs(IsingHamiltonian.energy(my_bs, G) - -9) < 1e-12)
-'''
+    #assert(abs(IsingHamiltonian.energy(my_bs, G) - -9) < 1e-12)
 
 
 
